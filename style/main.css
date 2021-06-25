@@ -37,6 +37,6 @@ body{
 }
 @media only screen and (min-width:730px) and (max-width:980px){
 	body{flex-direction: row;}
-	#temperature{margin-left: 2vw;}
-	#time{margin-right: 2vw;}
+	#temperature{margin-left: 4vw;}
+	#time{margin-right: 4vw;}
 }
