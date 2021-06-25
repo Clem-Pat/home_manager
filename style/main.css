@@ -9,40 +9,34 @@ body{
 	min-height: 100vh;
 	background: #091921;
 	display: flex;
-}
-.item{
-
+	flex-direction: column;
 }
 #time{
-	margin-right: 10vw;
+	margin-top: 5vh;
 }
 #date{
 	margin-top: 30px;
 	color: white;
 	justify-content: center;
+	align-items: center;
 	display: flex;
 	font: small-caps bold 1.5em sans-serif;
-}
-#temperature{
-	margin-left: 10vw;
 }
 #temp{
 	margin-top: 30px;
 	color: white;
 	justify-content: center;
+	align-items: center;
 	display: flex;
 	font: small-caps bold 9em sans-serif;
 }
-@media screen and (max-width:980px) {
-	#time{
-		margin-right: 2vw
-	}
-	#temperature{
-		margin-left: 2vw
-	}
+@media only screen and (min-width:980px) {
+	body{flex-direction: row;}
+	#time{margin-right: 10vw}
+	#temperature{margin-left: 10vw}
 }
-@media screen and (max-width:730px) {
-	body{
-		flex-direction: column;
-	}
+@media only screen and (min-width:730px) and (max-width:980px){
+	body{flex-direction: row;}
+	#temperature{margin-left: 2vw;}
+	#time{margin-right: 2vw;}
 }
