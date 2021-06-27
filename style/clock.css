@@ -21,14 +21,7 @@
 	height: 15px;
 	background: #fff;
 	border-radius: 50%;
-	z-index: 10000;
-}
-.clock .hour,
-.clock .min,
-.clock .sec{
-	position: absolute;
-	justify-content: center;
-	align-items: center;
+	z-index: 1;
 }
 .clock .hour .hr{
 	width: 160px;
@@ -48,7 +41,6 @@
 .hr, .mn, .sc{
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 	position: absolute;
 	border-radius: 50%;
 }

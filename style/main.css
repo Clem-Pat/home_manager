@@ -13,6 +13,7 @@ body{
 }
 #time{
 	margin-top: 5vh;
+	transform: translate(0,-10%);
 }
 #date{
 	margin-top: 30px;
@@ -21,6 +22,9 @@ body{
 	align-items: center;
 	display: flex;
 	font: small-caps bold 1.5em sans-serif;
+}
+#temperature{
+	transform: translate(0,-20%);
 }
 #temp{
 	margin-top: 30px;
