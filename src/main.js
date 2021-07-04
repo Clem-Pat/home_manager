@@ -36,7 +36,6 @@ function drawChart(){
 			datasets: [{
 				label: 'Historique',
 				borderColor: 'white',
-				fill: false,
 				data: data,
 				lineTension: 0
 			}]
@@ -44,12 +43,12 @@ function drawChart(){
 		options: {
 			animation: {duration: 0},
 			scales: {
-				xAxes: [{ticks: { fontColor: "white" }}],
-				yAxes: [{ticks: { fontColor: "white" }}]
+				xAxes: [{ticks: { fontColor: "white", fontSize: 17}}],
+				yAxes: [{ticks: { fontColor: "white", fontSize: 17}}]
 			},
 			legend: {
 				display: true,
-				labels: {fontColor: 'white'}
+				labels: {fontColor: 'white', fontSize: 17}
 			}
 		}
 	});
