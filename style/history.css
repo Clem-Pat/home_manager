@@ -33,7 +33,7 @@
 @media (max-aspect-ratio: 3/2) {
 	#historyPage{
 		flex-direction: column;
-		display: flex;
+		/* display: flex; */
 	}
 	#homeButton{
 		position: relative;
@@ -44,6 +44,6 @@
 	#historyGraph{
 		width: 90vw;
 		margin-bottom: 5vh;
-		height: auto;
+		height: 30vh;
 	}
 }
