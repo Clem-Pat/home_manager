@@ -16,7 +16,6 @@
 	cursor: pointer;
 }
 #historyGraph{
-    position: absolute;
     top:15vh;
     left: 10vw;
     height: 70vh;
@@ -30,4 +29,21 @@
 #chart{
 	height: 70vh;
 	width: 60vw;
+}
+@media (max-aspect-ratio: 3/2) {
+	#historyPage{
+		flex-direction: column;
+		display: flex;
+	}
+	#homeButton{
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-top: 5vh;
+	}
+	#historyGraph{
+		width: 90vw;
+		margin-bottom: 5vh;
+		height: auto;
+	}
 }

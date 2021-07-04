@@ -14,8 +14,11 @@ document.querySelector('#homeButton')
 });
 
 function resize(){
-	document.querySelector('#chart').style.height = '70vh';
-	document.querySelector('#chart').style.width = '60vw';
+	var cc = document.querySelector('#historyPage').style.flex.direction
+	if (cc != 'column') {
+		document.querySelector('#chart').style.height = '70vh';
+		document.querySelector('#chart').style.width = '60vw';
+	}
 }
 
 function drawChart(){

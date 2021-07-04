@@ -53,6 +53,13 @@ body{
 	#temperature{margin-left: 4vw;}
 	#time{margin-right: 4vw;}
 }
+/*
 @media only screen and (max-width:730px){
 	#firstPage{flex-direction: column;}
+}
+*/
+@media (max-aspect-ratio: 3/2) {
+	#firstPage{flex-direction: column;}
+	#temperature{margin-left: 0;}
+	#time{margin-right: 0;}
 }
