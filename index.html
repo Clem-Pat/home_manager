@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-
 <!-- home manager -->
-<html lang="fr" dir="ltr">
+
+<html lang='fr' dir='ltr'>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Home Manager</title>
-	<link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/clock.css">
+    <link rel='shortcut icon' href='ressources/VB.png'>
+	<link rel='stylesheet' href='style/main.css'>
+    <link rel='stylesheet' href='style/clock.css'>
+    <link rel='stylesheet' href='style/history.css'>
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script>    
 </head>
 
 <body class='body'>
-	<div id="time" class="item">
-		<div class="clock">
-			<div class="hour">
-				<div class="hr" id="hr"></div>
-			</div>
-			<div class="min">
-				<div class="mn" id="mn"></div>
-			</div>
-			<div class="sec">
-				<div class="sc" id="sc"></div>
-			</div>
-		</div>
-		<label id="date"></label>
-	</div>
-	<div id="temperature" class="item">
-		<label id="temp"> 28°C </label>
-	</div>
+    <div class='page' id='firstPage'>
+    	<div id='time' class='item'>
+    		<div class='clock'>
+    			<div class='hour'>
+    				<div class='hr' id='hr'></div>
+    			</div>
+    			<div class='min'>
+    				<div class='mn' id='mn'></div>
+    			</div>
+    			<div class='sec'>
+    				<div class='sc' id='sc'></div>
+    			</div>
+    		</div>
+    		<label id='date'></label>
+    	</div>
+    	<div id='temperature' class='item'>
+    		<label id='temp'> 28°C </label>
+    	</div>
+    </div>
+    <div class='page' id='historyPage'>
+        <div id="historyGraph"><canvas id='chart'></canvas></div>
+        <div id='homeButton'></div>
+    </div>
+
 </body>
-<script src="src/main.js" charset="utf-8"> </script>
-<script src="src/clock.js" charset="utf-8"> </script>
+<script src='src/main.js' charset='utf-8'> </script>
+<script src='src/clock.js' charset='utf-8'> </script>
 
 </html>

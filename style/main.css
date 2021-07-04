@@ -9,11 +9,19 @@ body{
 	min-height: 100vh;
 	background: #091921;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
+}
+.page{
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+#firstPage{
+	/* display: none; */
 }
 #time{
 	margin-top: 5vh;
-	transform: translate(0,-10%);
 }
 #date{
 	margin-top: 30px;
@@ -24,7 +32,7 @@ body{
 	font: small-caps bold 1.5em sans-serif;
 }
 #temperature{
-	transform: translate(0,-20%);
+	transform: translate(0,-10%);
 }
 #temp{
 	margin-top: 30px;
@@ -33,14 +41,18 @@ body{
 	align-items: center;
 	display: flex;
 	font: small-caps bold 9em sans-serif;
+	cursor: pointer;
 }
 @media only screen and (min-width:980px) {
-	body{flex-direction: row;}
+	#firstPage{flex-direction: row;}
 	#time{margin-right: 10vw}
 	#temperature{margin-left: 10vw}
 }
 @media only screen and (min-width:730px) and (max-width:980px){
-	body{flex-direction: row;}
+	#firstPage{flex-direction: row;}
 	#temperature{margin-left: 4vw;}
 	#time{margin-right: 4vw;}
+}
+@media only screen and (max-width:730px){
+	#firstPage{flex-direction: column;}
 }

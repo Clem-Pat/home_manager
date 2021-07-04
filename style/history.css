@@ -1,0 +1,33 @@
+/* home manager */
+
+#historyPage{
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+#homeButton{
+	background: url("../ressources/homeButton.png");
+	background-size:cover;
+	width: 10vh;
+	height: 10vh;
+	position: absolute;
+	top: 10vh;
+	left: 90vw;
+	cursor: pointer;
+}
+#historyGraph{
+    position: absolute;
+    top:15vh;
+    left: 10vw;
+    height: 70vh;
+    width: 60vw;
+	background: linear-gradient(45deg, #091921, #636363);
+    border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#chart{
+	height: 70vh;
+	width: 60vw;
+}
